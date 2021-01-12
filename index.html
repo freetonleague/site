@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Free TON</title>
+	<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-ipad-retina.png" />
+<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+<link rel="stylesheet" href="js/vendor/tiny-slider/dist/tiny-slider.css" media="all" />
+<link rel="stylesheet" href="styles/styles.css?v=1604148463967" media="all" />
+
+</head>
+<body>
+	<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+  <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+		<stop offset="0%" stop-color="#F1FAFF" />
+	    <stop offset="45.93%" stop-color="#FFFFFF" />
+	    <stop offset="100%" stop-color="#F1FAFF" />
+	</linearGradient>
+</svg>
+
+<svg style="display: none;"><defs>
+	<g id="svg-angle-top">
+		<!-- viewBox="0 0 1280 22.9" -->
+		<polygon points="1280,0 0,0 640,22.9 "/>
+	</g>
+
+	<g id="svg-angle-bottom">
+		<!-- viewBox="0 0 1280 34.4" -->
+		<polygon points="0,34.4 1280,34.4 640,0 "/>
+	</g>
+
+	<g id="svg-arrow-left">
+		<!-- viewBox="0 0 26 43.7" -->
+		<polygon points="22.4,43.7 0,21.9 22.4,0 26,3.7 7.4,21.9 26,40 "/>
+	</g>
+
+	<g id="svg-arrow-right">
+		<!-- viewBox="0 0 26 43.7" -->
+		<polygon points="3.6,43.7 26,21.9 3.6,0 0,3.7 18.6,21.9 0,40 "/>
+	</g>
+
+	<g id="svg-vk">
+		<!-- viewBox="0 0 20.5 11.7" -->
+		<path d="M16.7,11.7h-0.1c-0.5-0.1-0.9-0.3-1.3-0.6c-0.4-0.3-0.7-0.6-1-1c-0.2-0.2-0.4-0.4-0.6-0.8c-0.2-0.3-0.5-0.4-0.9-0.4
+		c-0.2,0-0.4,0.1-0.4,0.3c-0.1,0.2-0.1,0.4-0.1,0.6c0,0.2,0,0.5,0,0.7c0,0.2-0.1,0.4-0.2,0.6c-0.3,0.3-0.6,0.4-1,0.4
+		c-0.5,0-1,0-1.5,0c-1.2-0.1-2.3-0.5-3.3-1.2C5.4,9.8,4.7,9.1,4,8.3C3.4,7.4,2.8,6.5,2.2,5.7C1.7,4.7,1.2,3.8,0.7,2.9
+		c-0.1-0.3-0.3-0.6-0.5-1C0.1,1.5,0,1.1,0,0.7c0.2-0.2,0.5-0.3,0.9-0.3c0.3,0,0.7,0,1,0c0.3,0,0.7,0,1.1,0c0.3,0,0.7,0,1,0.1
+		c0.2,0.1,0.3,0.3,0.4,0.5C4.5,1.4,4.6,1.7,4.8,2C5,2.5,5.3,3,5.5,3.4S6,4.2,6.3,4.7c0.1,0.2,0.3,0.4,0.5,0.7C7,5.6,7.2,5.7,7.5,5.7
+		c0.2,0,0.3-0.3,0.4-0.7C8,4.5,8,4.1,8,3.7c0-0.4,0-0.8,0-1.3c0-0.3-0.1-0.7-0.2-1C7.7,1.2,7.5,1.1,7.3,1C7.1,1,6.9,0.9,6.7,0.7
+		c0.2-0.3,0.6-0.6,1-0.6C8.2,0,8.7,0,9.2,0c0.5,0,1,0,1.6,0c0.4,0,0.9,0.1,1.1,0.5c0.2,0.4,0.2,0.8,0.2,1.3C12,2.2,12,2.7,12,3.2
+		c0,0.5,0,1,0,1.4c0,0.4,0.2,0.8,0.5,1c0.3,0,0.5-0.2,0.6-0.4c0.2-0.2,0.3-0.4,0.5-0.6c0.3-0.4,0.6-0.8,0.8-1.3
+		C14.6,3,14.9,2.5,15.2,2c0.1-0.2,0.2-0.5,0.4-0.8c0.1-0.2,0.2-0.5,0.5-0.6c0.3-0.1,0.7-0.2,1.1-0.1c0.4,0,0.9,0,1.3,0
+		c0.2,0,0.4,0,0.6,0c0.2,0,0.4,0,0.7,0c0.2,0,0.4,0,0.6,0.1c0.1,0,0.3,0.1,0.3,0.2c0.1,0.3,0,0.6-0.1,0.9C20.3,2,20.1,2.2,20,2.5
+		C19.7,3,19.4,3.4,19,3.8c-0.3,0.4-0.7,0.8-1,1.3c-0.1,0.2-0.3,0.4-0.5,0.7c-0.2,0.2-0.3,0.5-0.3,0.9c0,0.2,0.1,0.5,0.3,0.6
+		c0.2,0.2,0.4,0.3,0.5,0.5c0.4,0.3,0.7,0.6,1,0.9c0.3,0.3,0.6,0.7,0.9,1c0.2,0.2,0.3,0.4,0.5,0.6c0.2,0.2,0.2,0.4,0.2,0.7
+		c0,0.3-0.2,0.5-0.5,0.6c-0.4,0.1-0.7,0.1-1.1,0.1c-0.4,0-0.8,0-1.2,0C17.4,11.6,17,11.6,16.7,11.7z"/>
+	</g>
+
+	<g id="svg-telegram">
+		<!-- viewBox="0 0 18.7 15.7" -->
+		<path d="M17.5,0.1C17.5,0.1,17.4,0.1,17.5,0.1L6.2,4.5C4.4,5.1,2.7,5.8,1,6.5C0.7,6.6,0.4,6.7,0.2,6.9C0.1,6.9,0.1,7,0,7.1
+		C0,7.2,0,7.2,0,7.3c0,0.1,0,0.2,0.1,0.2c0.1,0.1,0.1,0.1,0.2,0.2c0.2,0.1,0.3,0.2,0.5,0.2c1.3,0.4,2.5,0.8,3.8,1.2
+		c0.1,0,0.1,0.1,0.2,0.1c0,0,0.1,0.1,0.1,0.2c0.1,0.4,0.3,0.8,0.4,1.3c0.4,1.3,0.8,2.5,1.2,3.8c0,0.1,0.1,0.2,0.2,0.3
+		c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.3,0,0.5-0.1c0.2-0.1,0.3-0.2,0.4-0.3c0.6-0.6,1.3-1.3,1.9-1.9c0,0,0-0.1,0.1-0.1c0,0,0.1,0,0.1,0
+		c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0.1c1.3,1,2.6,1.9,3.9,2.9c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0.1,0.4,0,0.5,0c0.2-0.1,0.3-0.2,0.4-0.4
+		c0.1-0.2,0.2-0.4,0.2-0.7c0.9-4.1,1.7-8.1,2.6-12.2c0.1-0.5,0.2-1,0.3-1.4c0-0.2,0-0.3-0.1-0.5c-0.1-0.1-0.2-0.3-0.3-0.4
+		S18.1,0,17.9,0C17.8,0,17.6,0,17.5,0.1z M15.3,3.2c-0.2,0.1-0.3,0.3-0.5,0.4C12.4,5.8,10,8,7.6,10.2c-0.1,0.1-0.1,0.2-0.2,0.2
+		c0,0.1-0.1,0.2-0.1,0.3c-0.1,0.9-0.2,1.8-0.2,2.7c0,0,0,0,0,0.1c0,0,0,0-0.1,0c-0.1-0.4-0.2-0.7-0.4-1.1c-0.4-1.1-0.7-2.2-1.1-3.3
+		c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1c0,0,0-0.1,0.1-0.1c0,0,0.1-0.1,0.1-0.1c3-1.9,6-3.8,9-5.7c0.1-0.1,0.3-0.2,0.5-0.2
+		c0.1,0,0.2,0,0.3,0.1C15.5,3,15.4,3.1,15.3,3.2L15.3,3.2z"/>
+	</g>
+
+	<g id="svg-facebook">
+		<!-- viewBox="0 0 8.7 18.8" -->
+		<path d="M8.4,9.4H5.8v9.4H1.9V9.4H0V6.1h1.9V3.9C1.9,2.4,2.6,0,5.8,0l2.9,0v3.2H6.6C6.3,3.2,6.1,3.3,6,3.5C5.8,3.7,5.7,3.9,5.8,4.1
+		v1.9h3L8.4,9.4z"/>
+	</g>
+
+	<g id="svg-instagram">
+		<!-- viewBox="0 0 17.6 17.7" -->
+		<path d="M13.5,3.1c0.3,0,0.6,0.1,0.8,0.3c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8c-0.2,0.2-0.5,0.3-0.7,0.3
+		c-0.3,0-0.6-0.1-0.8-0.3c-0.3-0.3-0.4-0.8-0.2-1.2C12.7,3.3,13.1,3.1,13.5,3.1z M17.6,6.4L17.6,6.4c0-0.8-0.1-1.6-0.2-2.4
+		c-0.2-1.3-1-2.4-2.1-3.1c-0.9-0.5-1.9-0.8-2.9-0.8C12.2,0.1,11,0,8.8,0v0C7.3,0,6.5,0,6.4,0C5.5,0,4.7,0.1,3.9,0.2
+		C2.2,0.5,0.8,1.7,0.4,3.3C0.1,4.2,0,5.1,0,6.1c0,2.1,0,3.9,0,5.3c0,0.8,0.1,1.6,0.2,2.4c0.3,1.7,1.5,3.1,3.1,3.6
+		c0.9,0.3,1.8,0.4,2.7,0.3c2.1,0,3.9,0,5.2,0c0.8,0,1.6-0.1,2.4-0.2c1.7-0.3,3.1-1.5,3.6-3.1c0.3-0.9,0.4-1.8,0.3-2.7
+		C17.7,9.5,17.7,7.8,17.6,6.4z M16,12.7c0,1-0.4,1.9-1.2,2.5c-0.5,0.4-1.1,0.6-1.7,0.7c-0.7,0.1-1.4,0.1-2,0.1c-0.4,0-0.8,0-1.2,0
+		H7.7c-0.4,0-0.7,0-1,0c-0.8,0-1.6-0.1-2.3-0.2C3.6,15.8,3,15.5,2.5,15c-0.5-0.5-0.7-1.2-0.8-1.9c-0.1-0.8-0.1-1.8-0.1-3.1
+		c0-1.4,0-3,0.1-4.8c0-0.4,0.1-0.8,0.2-1.3c0.3-1.2,1.3-2.1,2.5-2.2c0.7-0.1,1.5-0.2,2.2-0.2c1.6,0,3.1,0,4.5,0
+		c0.8,0,1.6,0.1,2.4,0.2c0.7,0.1,1.3,0.4,1.7,0.9c0.4,0.5,0.7,1.2,0.8,1.9C16,5.1,16,5.8,16,6.6v2.1h0C16,11.2,16,12.5,16,12.7
+		L16,12.7z M11.1,4.9c-0.7-0.4-1.5-0.6-2.3-0.6v0c-0.8,0-1.6,0.2-2.3,0.6C5.9,5.3,5.3,5.9,4.9,6.5C4.5,7.2,4.3,8,4.3,8.8
+		c0,0.8,0.2,1.6,0.6,2.3c0.4,0.7,1,1.3,1.6,1.7c2.2,1.3,4.9,0.5,6.2-1.6C14,9,13.3,6.2,11.1,4.9z M11.5,10c-0.5,1.1-1.5,1.8-2.7,1.8
+		c-0.8,0-1.5-0.3-2.1-0.9C6,10.2,5.7,9.1,6,8.1C6.2,7,7,6.2,8,6c1-0.3,2.1,0,2.8,0.8C11.7,7.6,12,8.9,11.5,10z"/>
+	</g>
+
+	<g id="svg-twitch">
+		<!-- viewBox="0 0 19.1 22.3" -->
+		<path d="M4,0L0,4v14.4h4.8v4l4-4H12l7.2-7.2V0H4z M17.5,10.4l-3.2,3.2h-3.2l-2.8,2.8v-2.8H4.8v-12h12.8V10.4z M15.2,4.4h-1.6v4.8
+		h1.6V4.4z M10.8,4.4H9.2v4.8h1.6V4.4z"/>
+	</g>
+	
+	<!-- <svg class="svg-icon"><use xlink:href="#id"></use></svg> -->
+</defs></svg>
+
+
+	<div class="wrapper">
+		
+
+<header class="header">
+	<div class="container">
+		<div class="header__wrap">
+			<a href="#top" class="header__logo js-scroll-top">
+				<img src="images/logo.png" alt="">
+			</a>
+
+			<div class="header__main">
+				<nav class="nav js-nav">
+					<ul class="nav__list js-nav-menu">
+						<li class="nav__item nav__item--hidden"><a href="#top" class="nav__link js-nav-link"></a></li>
+						
+							<li class="nav__item"><a href="#news" class="nav__link js-nav-link">НОВОСТИ</a></li>
+						
+							<li class="nav__item"><a href="#stories" class="nav__link js-nav-link">СТОРИС</a></li>
+						
+							<li class="nav__item"><a href="#games" class="nav__link js-nav-link">ИГРЫ</a></li>
+						
+							<li class="nav__item"><a href="#tournament" class="nav__link js-nav-link">БЛИЖАЙШИЕ ТУРНИРЫ</a></li>
+						
+							<li class="nav__item"><a href="#about" class="nav__link js-nav-link">О ПРОЕКТЕ</a></li>
+						
+							<li class="nav__item"><a href="#reviews" class="nav__link js-nav-link">ОТЗЫВЫ</a></li>
+						
+							<li class="nav__item"><a href="#faq" class="nav__link js-nav-link">FAQ</a></li>
+						
+					</ul>
+
+					<div class="nav__socials">
+						<div class="socials">
+  	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 20.5 11.7" width="20.5px" height="11.7px" class="svg-icon"><use xlink:href="#svg-vk"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 18.7 15.7" width="18.7px" height="15.7px" class="svg-icon"><use xlink:href="#svg-telegram"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 8.7 18.8" width="8.7px" height="18.8px" class="svg-icon"><use xlink:href="#svg-facebook"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 17.6 17.7" width="17.6px" height="17.7px" class="svg-icon"><use xlink:href="#svg-instagram"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 19.1 22.3" width="19.1px" height="22.3px" class="svg-icon"><use xlink:href="#svg-twitch"></use></svg>
+		</a>
+	</div>
+</div>
+
+					</div>
+				</nav>
+
+				<div class="header__burger js-nav-toggle">
+					<i></i><i></i><i></i><i></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>		
+
+		<div class="main">
+			<div class="js-scrollspy" id="top">
+				<section class="section section--intro">
+					<div class="intro">
+						<div class="container">
+							<div class="intro__wrap">
+								<div class="intro__content">
+									<h1 class="intro__title"><span>Free TON</span> League</h1>
+
+									<div class="intro__text">еженедельные бесплатные турниры с призовым фондом от 250$</div>
+
+									<a href="" class="intro__button button"><span>смотреть расписание</span></a>
+								</div>
+								<div class="intro__image">
+									<img src="images/intro-img.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section--broadcast">
+					<div class="broadcast">
+						<div class="container">
+							<div class="broadcast__wrap">
+								<div class="broadcast__logo">
+									<img src="images/live.svg" alt="">
+								</div>
+								<div class="broadcast__list">
+									<div class="broadcast__item">
+										<div class="video">
+											<iframe src="https://www.youtube.com/embed/u-KVx1q89YA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="broadcast__item">
+										<div class="video">
+											<iframe src="https://www.youtube.com/embed/u-KVx1q89YA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="broadcast__item">
+										<div class="video">
+											<iframe src="https://www.youtube.com/embed/u-KVx1q89YA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="broadcast__item">
+										<div class="video">
+											<iframe src="https://www.youtube.com/embed/u-KVx1q89YA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+								<div class="broadcast__controls">
+									<a href="" class="broadcast__button button"><span>ПРИНЯТЬ УЧАСТИЕ</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="section section--news js-scrollspy" id="news">
+				<div class="news">
+					<div class="news__angle news__angle--top">
+						<svg class="svg-icon" viewBox="0 0 1280 22.9" fill="url(#bgGradient)"><use xlink:href="#svg-angle-top"></use></svg>
+					</div>
+					<div class="news__angle news__angle--bottom">
+						<svg class="svg-icon" viewBox="0 0 1280 34.4" fill="url(#bgGradient)"><use xlink:href="#svg-angle-bottom"></use></svg>
+					</div>
+					<div class="container">
+						<div class="news__wrap">
+							<div class="news__top">
+								<h3 class="news__title title"><span>НОВОСТИ</span></h3>
+							</div>
+							<div class="news__main">
+								<div class="news__slider">
+									
+
+<div class="slider slider--news js-slider-box" data-type="news">
+	<div class="slider__controls">
+		<div class="slider__arrows js-slider-arrows">
+			<button class="slider__arrow slider__arrow--prev js-slider-arrow-prev">
+				<svg viewBox="0 0 26 43.7" width="26px" height="43.7px" class="svg-icon"><use xlink:href="#svg-arrow-left"></use></svg>
+			</button>
+			
+			<button class="slider__arrow slider__arrow--next js-slider-arrow-next">
+				<svg viewBox="0 0 26 43.7" width="26px" height="43.7px" class="svg-icon"><use xlink:href="#svg-arrow-right"></use></svg>
+			</button>
+		</div>
+	</div>
+	<div class="slider__list js-slider">
+		
+	  	<div class="slider__item">
+			<a href="" class="news-card">
+				<img src="images/news-img-1.jpg" alt="">
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="news-card">
+				<img src="images/news-img-1.jpg" alt="">
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="news-card">
+				<img src="images/news-img-1.jpg" alt="">
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="news-card">
+				<img src="images/news-img-1.jpg" alt="">
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="news-card">
+				<img src="images/news-img-1.jpg" alt="">
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="news-card">
+				<img src="images/news-img-1.jpg" alt="">
+			</a>
+		</div>
+		
+	</div>
+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--stories js-scrollspy" id="stories">
+				<div class="stories">
+					<div class="container">
+						<div class="stories__wrap">
+							<div class="stories__top">
+								<h3 class="stories__title title"><span>СТОРИС</span></h3>
+							</div>
+							<div class="stories__main">
+								<div class="stories__slider">
+									
+
+<div class="slider slider--stories js-slider-box" data-type="stories">
+	<div class="slider__controls">
+		<div class="slider__arrows js-slider-arrows">
+			<button class="slider__arrow slider__arrow--prev js-slider-arrow-prev">
+				<svg viewBox="0 0 26 43.7" width="13px" height="22px" class="svg-icon"><use xlink:href="#svg-arrow-left"></use></svg>
+			</button>
+			
+			<button class="slider__arrow slider__arrow--next js-slider-arrow-next">
+				<svg viewBox="0 0 26 43.7" width="13px" height="22px" class="svg-icon"><use xlink:href="#svg-arrow-right"></use></svg>
+			</button>
+		</div>
+	</div>
+	<div class="slider__list js-slider">
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-1.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-2.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-3.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-4.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-1.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-2.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-3.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="stories-card">
+				<div class="stories-card__img">
+					<img src="images/stories-img-4.png" alt="">
+				</div>
+				<div class="stories-card__wrap">
+					<div class="stories-card__user">
+						<img src="images/logo.png" alt="">	
+					</div>
+					<div class="stories-card__main">
+						<div class="stories-card__title">Free TON League</div>
+						<div class="stories-card__info">1 week ago</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+</div>
+								</div>
+							</div>
+							<div class="stories__controls">
+								<a href="" class="stories__button button"><span>бесплатная регистрация в турнире</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--games js-scrollspy" id="games">
+				<div class="games">
+					<div class="container">
+						<div class="games__wrap">
+							<div class="games__top">
+								<h3 class="games__title title"><span>ИГРЫ</span></h3>
+							</div>
+							<div class="games__main">
+								
+
+<div class="games__list">
+	
+  	<div class="games__item games__item--lg">
+		<div class="games-card">
+			<img class="games-card__image" src="images/game_1.png" alt="">
+		</div>
+	</div>
+	
+  	<div class="games__item games__item--lg">
+		<div class="games-card">
+			<img class="games-card__image" src="images/game_2.png" alt="">
+		</div>
+	</div>
+	
+  	<div class="games__item ">
+		<div class="games-card">
+			<img class="games-card__image" src="images/game_3.png" alt="">
+		</div>
+	</div>
+	
+  	<div class="games__item ">
+		<div class="games-card">
+			<img class="games-card__image" src="images/game_4.png" alt="">
+		</div>
+	</div>
+	
+  	<div class="games__item ">
+		<div class="games-card">
+			<img class="games-card__image" src="images/game_5.png" alt="">
+		</div>
+	</div>
+	
+</div>
+
+
+								<div class="games__text">10 турниров <br>свыше 200000 рублей <br>призовых выплачено</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--tournament js-scrollspy" id="tournament">
+				<div class="tournament">
+					<div class="tournament__top">
+						<div class="container">
+							<h3 class="tournament__title title"><span>БЛИЖАЙШИЕ ТУРНИРЫ</span></h3>
+						</div>
+					</div>
+					<div class="tournament__wrap">
+						<div class="news__angle news__angle--top">
+							<svg class="svg-icon" viewBox="0 0 1280 22.9" fill="url(#bgGradient)"><use xlink:href="#svg-angle-top"></use></svg>
+						</div>
+						<div class="news__angle news__angle--bottom">
+							<svg class="svg-icon" viewBox="0 0 1280 34.4" fill="url(#bgGradient)"><use xlink:href="#svg-angle-bottom"></use></svg>
+						</div>
+
+						<div class="tournament__box">
+							<div class="container">
+								<div class="tournament__main">
+									<div class="tournament__row">
+										<div class="tournament__col">
+											<div class="tournament-card tournament-card--lead">
+												<div class="tournament-card__image">
+													<img src="images/tournament-img-1.jpg" alt="">
+												</div>
+												<div class="tournament-card__main">
+													<div class="tournament-card__row tournament-card__row--main">
+														<div class="tournament-card__col">
+															<div class="tournament-card__date">24.10.2020 Суббота <br>16:00 (МСК) </div>
+														</div>
+														<div class="tournament-card__col">
+															<div class="tournament-card__subtitle">Free TON League</div>
+															<div class="tournament-card__title">CS:GO 5vs5 Week 7</div>
+														</div>
+													</div>
+													<div class="tournament-card__row tournament-card__row--info">
+														<div class="tournament-card__col">
+															<dl class="tournament-card__info">
+																<dt>Призовой фонд:</dt>
+																<dd>30000 р</dd>
+															</dl>
+															<dl class="tournament-card__info">
+																<dt>Формат:</dt>
+																<dd>5х5</dd>
+															</dl>
+														</div>
+														<div class="tournament-card__col">
+															<dl class="tournament-card__info">
+																<dt>Кол-во участников:</dt>
+																<dd>100 / 128</dd>
+															</dl>
+															<dl class="tournament-card__info">
+																<dt>Мод:</dt>
+																<dd>captains mode</dd>
+															</dl>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="tournament__controls">
+												<a href="" class="tournament__button button"><span>УЧАСТВОВАТЬ</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="tournament__slider">
+									
+
+<div class="slider slider--tournament js-slider-box" data-type="tournament">
+	<div class="slider__controls">
+		<div class="slider__arrows js-slider-arrows">
+			<button class="slider__arrow slider__arrow--prev js-slider-arrow-prev">
+				<svg viewBox="0 0 26 43.7" width="17px" height="28.5px" class="svg-icon"><use xlink:href="#svg-arrow-left"></use></svg>
+			</button>
+			
+			<button class="slider__arrow slider__arrow--next js-slider-arrow-next">
+				<svg viewBox="0 0 26 43.7" width="17px" height="28.5px" class="svg-icon"><use xlink:href="#svg-arrow-right"></use></svg>
+			</button>
+		</div>
+	</div>
+	<div class="slider__list js-slider">
+		
+	  	<div class="slider__item">
+			<a href="" class="tournament-card">
+				<div class="tournament-card__image">
+					<img src="images/tournament-img-2.jpg" alt="">
+				</div>
+				<div class="tournament-card__main">
+					<div class="tournament-card__date">24.10.2020  16:00 (МСК)</div>
+					<div class="tournament-card__subtitle">Free TON League</div>
+					<div class="tournament-card__title">CS:GO 5vs5 Week 7</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="tournament-card">
+				<div class="tournament-card__image">
+					<img src="images/tournament-img-3.jpg" alt="">
+				</div>
+				<div class="tournament-card__main">
+					<div class="tournament-card__date">24.10.2020  16:00 (МСК)</div>
+					<div class="tournament-card__subtitle">Free TON League</div>
+					<div class="tournament-card__title">CS:GO 5vs5 Week 7</div>
+				</div>
+			</a>
+		</div>
+		
+	  	<div class="slider__item">
+			<a href="" class="tournament-card">
+				<div class="tournament-card__image">
+					<img src="images/tournament-img-4.jpg" alt="">
+				</div>
+				<div class="tournament-card__main">
+					<div class="tournament-card__date">24.10.2020  16:00 (МСК)</div>
+					<div class="tournament-card__subtitle">Free TON League</div>
+					<div class="tournament-card__title">CS:GO 5vs5 Week 7</div>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--about js-scrollspy" id="about">
+				<div class="about">
+					<div class="container">
+						<div class="about__wrap">
+							<div class="about__image">
+								<img src="images/about-img.png" alt="">
+							</div>
+
+							<div class="about__content">
+								<h2 class="about__title">Free TON League</h2>
+
+								<div class="about__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals <br>Мы делаем это через Киберспорт</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--partners js-scrollspy" id="partners">
+				<div class="partners">
+					<div class="container">
+						<div class="partners__wrap">
+							<h3 class="partners__title title"><span>НАШИ ПАРТНЕРЫ</span></h3>
+							<div class="partners__list">
+								<div class="partners__item">
+									<img src="images/partners-img-1.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="images/partners-img-2.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="images/partners-img-3.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--reviews js-scrollspy" id="reviews">
+				<div class="reviews">
+					<div class="container">
+						<div class="reviews__wrap">
+							<div class="reviews__slider">
+								
+
+<div class="slider slider--reviews js-slider-box" data-type="reviews">
+	<div class="slider__list js-slider">
+		
+	  	<div class="slider__item">
+			<div class="reviews-card">
+				<div class="reviews-card__icon">
+					<img src="images/reviews-icon.svg" alt="">
+				</div>
+				<div class="reviews-card__wrap">
+					<h4 class="reviews-card__title">мы проводим бесплатные турниры для всех желающи иберспортивным</h4>
+					<div class="reviews-card__text">мы проводим бесплатные турниры для всех желающих по киберспортивным играм, привлекаем стримеров на освещение, договарваемся с площадками для нашего промо и т.д. создаём комьюнити, и в конечном итоге - знакомим людей с экосистемой Free TON</div>
+				</div>
+			</div>
+		</div>
+		
+	  	<div class="slider__item">
+			<div class="reviews-card">
+				<div class="reviews-card__icon">
+					<img src="images/reviews-icon.svg" alt="">
+				</div>
+				<div class="reviews-card__wrap">
+					<h4 class="reviews-card__title">мы проводим бесплатные турниры для всех желающи иберспортивным</h4>
+					<div class="reviews-card__text">мы проводим бесплатные турниры для всех желающих по киберспортивным играм, привлекаем стримеров на освещение, договарваемся с площадками для нашего промо и т.д. создаём комьюнити, и в конечном итоге - знакомим людей с экосистемой Free TON</div>
+				</div>
+			</div>
+		</div>
+		
+	  	<div class="slider__item">
+			<div class="reviews-card">
+				<div class="reviews-card__icon">
+					<img src="images/reviews-icon.svg" alt="">
+				</div>
+				<div class="reviews-card__wrap">
+					<h4 class="reviews-card__title">мы проводим бесплатные турниры для всех желающи иберспортивным</h4>
+					<div class="reviews-card__text">мы проводим бесплатные турниры для всех желающих по киберспортивным играм, привлекаем стримеров на освещение, договарваемся с площадками для нашего промо и т.д. создаём комьюнити, и в конечном итоге - знакомим людей с экосистемой Free TON</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--faq js-scrollspy" id="faq">
+				<div class="faq">
+					<div class="container">
+						<div class="faq__wrap">
+							<h3 class="faq__title title"><span>FAQ</span></h3>
+
+							<div class="faq__main">
+								
+
+<div class="faq__list">
+	
+  	<div class="faq__item">
+		<div class="faq-card">
+			<div class="faq-card__icon">
+				<img src="images/faq-icon.svg" alt="">
+			</div>
+			<div class="faq-card__main">
+				<h4 class="faq-card__title">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты</h4>
+				<div class="faq-card__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт</div>
+			</div>
+		</div>
+	</div>
+	
+  	<div class="faq__item">
+		<div class="faq-card">
+			<div class="faq-card__icon">
+				<img src="images/faq-icon.svg" alt="">
+			</div>
+			<div class="faq-card__main">
+				<h4 class="faq-card__title">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты</h4>
+				<div class="faq-card__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт</div>
+			</div>
+		</div>
+	</div>
+	
+  	<div class="faq__item">
+		<div class="faq-card">
+			<div class="faq-card__icon">
+				<img src="images/faq-icon.svg" alt="">
+			</div>
+			<div class="faq-card__main">
+				<h4 class="faq-card__title">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты</h4>
+				<div class="faq-card__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт</div>
+			</div>
+		</div>
+	</div>
+	
+  	<div class="faq__item">
+		<div class="faq-card">
+			<div class="faq-card__icon">
+				<img src="images/faq-icon.svg" alt="">
+			</div>
+			<div class="faq-card__main">
+				<h4 class="faq-card__title">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты</h4>
+				<div class="faq-card__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт</div>
+			</div>
+		</div>
+	</div>
+	
+  	<div class="faq__item">
+		<div class="faq-card">
+			<div class="faq-card__icon">
+				<img src="images/faq-icon.svg" alt="">
+			</div>
+			<div class="faq-card__main">
+				<h4 class="faq-card__title">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты</h4>
+				<div class="faq-card__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт</div>
+			</div>
+		</div>
+	</div>
+	
+  	<div class="faq__item">
+		<div class="faq-card">
+			<div class="faq-card__icon">
+				<img src="images/faq-icon.svg" alt="">
+			</div>
+			<div class="faq-card__main">
+				<h4 class="faq-card__title">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты</h4>
+				<div class="faq-card__text">Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт Цель Free TON League - развитие Free TON комьюнити и популяризация криптовалюты TON Crystals Мы делаем это через Киберспорт</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__wrap">
+			<div class="footer__main">
+				<h3 class="footer__title">Free TON League</h3>
+				<div class="footer__socials">
+					<div class="socials">
+  	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 20.5 11.7" width="20.5px" height="11.7px" class="svg-icon"><use xlink:href="#svg-vk"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 18.7 15.7" width="18.7px" height="15.7px" class="svg-icon"><use xlink:href="#svg-telegram"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 8.7 18.8" width="8.7px" height="18.8px" class="svg-icon"><use xlink:href="#svg-facebook"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 17.6 17.7" width="17.6px" height="17.7px" class="svg-icon"><use xlink:href="#svg-instagram"></use></svg>
+		</a>
+	</div>
+	<div class="socials__item">
+		<a href="" class="socials__link">
+			<svg viewBox="0 0 19.1 22.3" width="19.1px" height="22.3px" class="svg-icon"><use xlink:href="#svg-twitch"></use></svg>
+		</a>
+	</div>
+</div>
+
+				</div>
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="" class="footer-menu__link">Регламент</a></li>
+					<li class="footer-menu__item"><a href="" class="footer-menu__link">ссылка 1</a></li>
+					<li class="footer-menu__item"><a href="" class="footer-menu__link">ссылка 2</a></li>
+					<li class="footer-menu__item"><a href="" class="footer-menu__link">ссылка 3</a></li>
+				</ul>
+			</div>
+			<div class="footer__copy">© Free TON League</div>
+		</div>
+	</div>
+</footer>		
+	</div>
+	
+	<!-- Footer Scripts -->
+	<!-- Custom js scripts -->
+<script src="js/app.js?v=1604148463967"></script>
+
+</body>
+</html>
